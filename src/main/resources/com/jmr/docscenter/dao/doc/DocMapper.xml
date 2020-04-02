@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmr.docscenter.dao.doc.DocMapper">
+  <resultMap id="BaseResultMap" type="com.jmr.docscenter.domain.entity.doc.Doc">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pk_id" jdbcType="VARCHAR" property="pkId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="author_id" jdbcType="VARCHAR" property="authorId" />
+    <result column="project_id" jdbcType="VARCHAR" property="projectId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <result column="stared" jdbcType="INTEGER" property="stared" />
+    <result column="liked" jdbcType="INTEGER" property="liked" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>
